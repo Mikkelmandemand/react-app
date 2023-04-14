@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Mikkelmandemand/Mikkelmandemand.github.io.git/static/css/main.2c246ed7.css",
-    "main.js": "/Mikkelmandemand/Mikkelmandemand.github.io.git/static/js/main.09063138.js",
-    "index.html": "/Mikkelmandemand/Mikkelmandemand.github.io.git/index.html",
-    "main.2c246ed7.css.map": "/Mikkelmandemand/Mikkelmandemand.github.io.git/static/css/main.2c246ed7.css.map",
-    "main.09063138.js.map": "/Mikkelmandemand/Mikkelmandemand.github.io.git/static/js/main.09063138.js.map"
+    "main.css": "/react-app/static/css/main.2c246ed7.css",
+    "main.js": "/react-app/static/js/main.09063138.js",
+    "index.html": "/react-app/index.html",
+    "main.2c246ed7.css.map": "/react-app/static/css/main.2c246ed7.css.map",
+    "main.09063138.js.map": "/react-app/static/js/main.09063138.js.map"
   },
   "entrypoints": [
     "static/css/main.2c246ed7.css",
