@@ -5,9 +5,369 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+background-color: #d14d4d;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.grid-container{
+  width: 100%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+
+.Card {
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, #8693AB 0%, #BDD4E7 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+
+}
+
+.Card:hover{
+  box-shadow: 0 0 3px black;
+  margin-top: -0.0000001px;
+}
+
+.Img {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.Card_type {
+  margin-right: 5px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+
+.navigation, .navigation-buttons {
+  background-color: #d14d4d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  height: 50px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+}
+
+.prev-button,
+.next-button {
+  margin: 0 10px; /* add some space between buttons */
+  padding: 10px 20px; /* add some padding to make the buttons easier to click */
+  border: none;
+  background-color: #d14d4d;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: #ec1010;
+}
+
+:root {
+  --type-bug: #729f3f;
+  --type-dragon: #53a4cf;
+  --type-fairy: #fdb9e9;
+  --type-fire: #fd7d24;
+  --type-ghost: #7b62a3;
+  --type-ground: #ab9842;
+  --type-normal: #a4acaf;
+  --type-psychic: #f366b9;
+  --type-steel: #9eb7b8;
+  --type-dark: #707070;
+  --type-electric: #eed535;
+  --type-fighting: #d56723;
+  --type-flying: #3dc7ef;
+  --type-grass: #9bcc50;
+  --type-ice: #51c4e7;
+  --type-poison: #b97fc9;
+  --type-rock: #5f5113b6;
+  --type-water: #4592c4;
+}
+
+.Card_type {
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.Card_type--bug {
+  background-color: var(--type-bug);
+}
+
+.Card_type--dragon {
+  background-color: var(--type-dragon);
+}
+
+.Card_type--fairy {
+  background-color: var(--type-fairy);
+}
+
+.Card_type--fire {
+  background-color: var(--type-fire);
+}
+
+.Card_type--ghost {
+  background-color: var(--type-ghost);
+}
+
+.Card_type--ground {
+  background-color: var(--type-ground);
+}
+
+.Card_type--normal {
+  background-color: var(--type-normal);
+}
+
+.Card_type--psychic {
+  background-color: var(--type-psychic);
+}
+
+.Card_type--steel {
+  background-color: var(--type-steel);
+}
+
+.Card_type--dark {
+  background-color: var(--type-dark);
+}
+
+.Card_type--electric {
+  background-color: var(--type-electric);
+}
+
+.Card_type--fighting {
+  background-color: var(--type-fighting);
+}
+
+.Card_type--flying {
+  background-color: var(--type-flying);
+}
+
+.Card_type--grass {
+  background-color: var(--type-grass);
+}
+
+.Card_type--ice {
+  background-color: var(--type-ice);
+}
+
+.Card_type--poison {
+  background-color: var(--type-poison);
+}
+
+.Card_type--rock {
+  background-color: var(--type-rock);
+}
+
+.Card_type--water {
+  background-color: var(--type-water);
+}
+
+.details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  z-index: 9999;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.details-header h2 {
+  margin: 0;
+}
+
+.details-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+.details-body img {
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+
+.details-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.image-wrapper {
+  flex-basis: 45%;
+  margin-bottom: 1rem;
+}
+
+.image-wrapper img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.details-types {
+  display: flex;
+  justify-content: center;
+}
+
+.details-type {
+  margin: 0 8px;
+  padding: 8px;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.details-type--grass {
+  background-color: #9bcc50;
+  color: white;
+}
+
+.details-type--fire {
+  background-color: #fd7d24;
+  color: white;
+}
+
+.details-type--water {
+  background-color: #4592c4;
+  color: white;
+}
+
+.details-type--bug {
+  background-color: #729f3f;
+  color: white;
+}
+
+.details-type--normal {
+  background-color: #a4acaf;
+  color: white;
+}
+
+.details-type--electric {
+  background-color: #eed535;
+  color: black;
+}
+
+.details-type--ground {
+  background-color: #ab9842;
+  color: white;
+}
+
+.details-type--fairy {
+  background-color: #fdb9e9;
+  color: black;
+}
+
+.details-type--poison {
+  background-color: #b97fc9;
+  color: white;
+}
+
+.details-type--psychic {
+  background-color: #f366b9;
+  color: white;
+}
+
+.details-type--rock {
+  background-color: #5f5113b6;
+  color: white;
+}
+
+.details-type--ghost {
+  background-color: #7b62a3;
+  color: white;
+}
+
+.details-type--ice {
+  background-color: #51c4e7;
+  color: white;
+}
+
+.details-type--dragon {
+  background-color: #f16e57;
+  color: white;
+}
+
+.details-type--dark {
+  background-color: #707070;
+  color: white;
+}
+
+.details-type--steel {
+  background-color: #9eb7b8;
+  color: white;
+}
+
+.details-type--fighting {
+  background-color: #d56723;
+  color: white;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #d14d4d;
+}
+
+
